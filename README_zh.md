@@ -34,9 +34,11 @@ graph TD
     MD[Market Data Agent] --> TA[Technical Analyst]
     MD --> FA[Fundamentals Analyst]
     MD --> SA[Sentiment Analyst]
+    MD --> VA[Valuation Analyst]
     TA --> RM[Risk Manager]
     FA --> RM
     SA --> RM
+    VA --> RM
     RM --> PM[Portfolio Manager]
     PM --> Decision[Final Decision]
 ```
