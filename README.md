@@ -1,3 +1,11 @@
+>>加入我的知识星球（一顿饭钱：99¥）（微信号: PareidoliaX，加微信后，我拉你进星球。微信只做邀请用途，不做私人回复。）
+>>
+>>❗❗非加入星球或者非定制软件就不用加好友了，省好友位哈）
+>>
+>>星球中还有更多我个人分享的资料和对该项目的解析噢。
+>>
+>>另外，星球会提前更新两个版本的代码哈，抢先体验不容错过哦。
+
 # Free US Investment Agent System 🚀
 
 A sophisticated AI-powered investment agent system for US stock market analysis and trading decisions, leveraging yfinance for market data and AlphaVantage for news sentiment analysis.
