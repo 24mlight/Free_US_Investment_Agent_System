@@ -359,7 +359,7 @@ Welcome to our exclusive Knowledge Planet community! Here you'll find:
 - 💡 One-on-one Q&A support
 
 <img src="src/img/planet.jpg" alt="Knowledge Planet QR Code" width="200"/>
-❗❗ 为防止苹果收取手续费，苹果用户请添加我的微信加入星球，微信号: PareidoliaX
+❗❗ 不用扫码，请添加最开始的微信进去星球
 
 ## 🙏 Acknowledgments
 
