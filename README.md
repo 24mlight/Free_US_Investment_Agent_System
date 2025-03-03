@@ -60,6 +60,7 @@ The system employs multiple AI agents working together to make investment decisi
    - Provides fundamental analysis signals
 
 4. **Sentiment Analyst**
+
    - Analyzes news sentiment
    - Generates sentiment-based signals
 
