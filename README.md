@@ -1,10 +1,10 @@
->>加入我的知识星球（一顿饭钱：99¥）（微信号: PareidoliaX，加微信后，我拉你进星球。微信只做邀请用途，不做私人回复。）
->>
->>❗❗非加入星球或者非定制软件就不用加好友了，省好友位哈）
->>
->>星球中还有更多我个人分享的资料和对该项目的解析噢。
->>
->>另外，星球会提前更新两个版本的代码哈，抢先体验不容错过哦。
+> > 加入我的知识星球（一顿饭钱：99¥）（微信号: PareidoliaX，加微信后，我拉你进星球。微信只做邀请用途，不做私人回复。）
+> >
+> > ❗❗ 非加入星球或者非定制软件就不用加好友了，省好友位哈）
+> >
+> > 星球中还有更多我个人分享的资料和对该项目的解析噢。
+> >
+> > 另外，星球会提前更新两个版本的代码哈，抢先体验不容错过哦。
 
 # Free US Investment Agent System 🚀
 
@@ -37,19 +37,7 @@ By using this software, you agree to use it solely for learning purposes.
 
 The system employs multiple AI agents working together to make investment decisions:
 
-```mermaid
-graph TD
-    MD[Market Data Agent] --> TA[Technical Analyst]
-    MD --> FA[Fundamentals Analyst]
-    MD --> SA[Sentiment Analyst]
-    MD --> VA[Valuation Analyst]
-    TA --> RM[Risk Manager]
-    FA --> RM
-    SA --> RM
-    VA --> RM
-    RM --> PM[Portfolio Manager]
-    PM --> Decision[Final Decision]
-```
+![System Architecture V2](src/img/structure_v2.png)
 
 ### Agent Descriptions
 
@@ -72,30 +60,54 @@ graph TD
    - Provides fundamental analysis signals
 
 4. **Sentiment Analyst**
-
-   - Fetches news from AlphaVantage
-   - Analyzes news sentiment using Gemini
+   - Analyzes news sentiment
    - Generates sentiment-based signals
 
-5. **Risk Manager**
+5. **Valuation Analyst**
 
-   - Integrates signals from all analysts
+   - Performs DCF analysis
+   - Calculates owner earnings value
+   - Assesses fair market value
+
+6. **Bull Researcher**
+
+   - Analyzes bullish signals from analysts
+   - Constructs bull thesis with evidence
+   - Quantifies bullish confidence
+
+7. **Bear Researcher**
+
+   - Analyzes bearish signals from analysts
+   - Constructs bear thesis with evidence
+   - Quantifies bearish confidence
+
+8. **Debate Room**
+
+   - Facilitates bull vs bear debate
+   - Weighs opposing arguments
+   - Reaches balanced conclusions
+
+9. **Risk Manager**
+
+   - Integrates debate conclusions
    - Evaluates potential risks
    - Sets position limits
    - Provides risk-adjusted recommendations
 
-6. **Portfolio Manager**
-   - Makes final trading decisions
-   - Manages position sizing
-   - Balances risk and reward
-   - Generates executable orders
+10. **Portfolio Manager**
+    - Makes final trading decisions
+    - Manages position sizing
+    - Balances risk and reward
+    - Generates executable orders
 
 ### Workflow
 
 1. Market Data Agent collects all necessary data
-2. Three analysts (Technical, Fundamental, Sentiment) work in parallel
-3. Risk Manager combines and evaluates all signals
-4. Portfolio Manager makes the final decision
+2. Four analysts (Technical, Fundamental, Sentiment, Valuation) work in parallel
+3. Bull and Bear Researchers analyze signals from different perspectives
+4. Debate Room facilitates discussion between researchers
+5. Risk Manager evaluates debate conclusions
+6. Portfolio Manager makes the final decision
 
 ## 📁 Project Structure
 
